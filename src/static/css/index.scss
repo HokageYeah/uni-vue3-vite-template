@@ -1,0 +1,264 @@
+@import './variables.scss';
+@import './mixin.scss';
+
+ /* html {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+ -webkit-filter: grayscale(1);
+} */
+body {
+  /* MathJax v2.7.5 from 'cdnjs.cloudflare.com' */
+.mjx-chtml {
+  outline: 0;
+}
+.MJXc-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  display: inline;
+  margin: 0 0;
+}
+}
+
+html,
+body
+.app {
+  color: #333333;
+  font-family: Arial, Helvetica, 'STHeiti STXihei', 'Microsoft YaHei', Tohoma, sans-serif;
+  background-color: $background-color;
+  font-size: $default-font-size;
+}
+
+.layout-content{
+  min-height: 92vh;
+}
+
+.components-container{
+  min-height: 92%;
+}
+
+body .app p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: 'vant-icon';
+  font-style: normal;
+  font-display: auto;
+  src: url('~@/static/css/fonts/vant-icon-db1de1.woff2') format('woff2'),
+    url('~@/static/css/fonts/vant-icon-db1de1.woff') format('woff'),
+    url('~@/static/css/fonts/vant-icon-db1de1.ttf') format('truetype');
+}
+// ==================== 文字样式相关 ====================
+// 可以在子页面中覆写部分属性，或者新增属性，子页面的样式优先级会更高
+html,
+body
+.app {
+// 一些特殊情况需要加粗的标题
+  .text-stress-big {
+    font-weight: bolder;
+    font-size: $stress-font-size-big;
+    color: $stress-text-color;
+    line-height: 180%;
+    word-break: break-all;
+  }
+
+// 用于重要级文字信息、内页标题信息：如正文内容文字
+  .text-stress {
+    word-break: break-all;
+    font-weight: bold;
+    font-size: $stress-font-size;
+    color: $stress-text-color;
+    line-height: 180%;
+  }
+
+  .text-clickable {
+    font-size: $primary-font-size;
+    color: $stress-clickable-color;
+    line-height: 180%;
+    word-break: break-all;
+  }
+
+// 常用于正文文本
+  .text-primary {
+    font-size: $primary-font-size;
+    color: $stress-text-color;
+    line-height: 180%;
+    word-break: break-all;
+  }
+
+  .text-primary-normal {
+    font-size: $primary-font-size;
+    color: $primary-text-color;
+    line-height: 180%;
+    word-break: break-all;
+  }
+
+// 次要文字，提示语等，按规范，原本应该是12，但是后期美工要求字大一点，基本都是要求14，所以这里写的14
+  .text-minor {
+    // font-size: $minor-font-size;
+    font-size: $primary-font-size;
+    color: $normal-minor-text-color;
+    line-height: 180%;
+    word-break: break-all;
+  }
+
+  .text-minor-normal {
+    font-size: $minor-font-size;
+    color: $normal-minor-text-color;
+    line-height: 180%;
+    word-break: break-all;
+  }
+
+  .text-tip {
+    // font-size: $minor-font-size;
+    font-size: $tip-font-size;
+    color: $normal-minor-text-color;
+    line-height: 150%;
+    word-break: break-all;
+  }
+
+  .text-indent {
+    text-indent: 2em;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .font-size-stress-big {
+    font-size: $stress-font-size-big;
+  }
+  .font-size-stress {
+    font-size: $stress-font-size;
+  }
+  .font-size-primary {
+    font-size: $primary-font-size;
+  }
+  .font-size-minor {
+    font-size: $minor-font-size;
+  }
+  .font-size-tip {
+    font-size: $tip-font-size;
+  }
+
+  .color-white {
+    color: white;
+  }
+  .color-stress {
+    color: $stress-text-color;
+  }
+  .color-primary {
+    color: $primary-text-color;
+  }
+  .color-stress-clickable {
+    color: $stress-clickable-color;
+  }
+  .color-red {
+    color: $red-color;
+  }
+
+  .line-height-180 {
+    line-height: 180%;
+  }
+  .line-height-150 {
+    line-height: 150%;
+  }
+
+// 底部按钮，占满全屏的样式
+  .button-footer-full-width {
+    position: fixed;
+    bottom: 0;
+    font-size: $stress-font-size-big;
+    width: 90%;
+    padding: 10px 5%;
+  }
+
+  .button-footer-full-width .van-button--normal {
+    font-size: $stress-font-size-big;
+  }
+
+// 底部按钮，不占满全屏，底部有些空隙
+  body .button-footer-normal {
+    position: fixed;
+    font-size: $stress-font-size-big;
+    bottom: 16px;
+    left: 0;
+    width: 90%;
+    margin: 0 5%;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+  }
+
+  .button-footer-normal .van-button--normal {
+    font-size: $stress-font-size-big;
+    border-radius: 8px;
+  }
+
+  // 对话框标题样式定制
+  .van-dialog .van-dialog__header {
+    font-size: $stress-font-size;
+    font-weight: bold;
+    padding: 20px 0px 12px 0px;
+  }
+
+  // van-form定制 提示语14 信息16
+  .v-form-xxt .van-field {
+    font-size: $stress-font-size;
+  }
+
+  .v-form-xxt .vf-left {
+    font-size: $primary-font-size;
+    color: $stress-text-color;
+  }
+  .van-tab--active {
+    font-weight:bolder
+  }
+
+  // 区域分割线
+  body .div-divider {
+    height: 0.5px;
+    background-color: #f0f0f0;
+    margin: 6px 0px;
+  }
+
+  .aplayer {
+      border-radius: 30px/50% !important;
+      height: 60px;
+  }
+}
+
+html,
+body
+.aplayer {
+  //去除播放器后面的播放模式
+  .aplayer-icon-mode {
+     display: none !important;
+   }
+
+  .aplayer-pic {
+       border-radius: 50%;
+       margin: 10px;
+       height: 40px;
+       width: 40px;
+       background-color:rgb(39, 198, 117) !important;
+  }
+
+  .aplayer-info {
+       padding: 6px 22px 8px 0px !important;
+  }
+
+  .aplayer-bar {
+    margin-left: 2px;
+  }
+
+  .aplayer-controller {
+      display: block !important;
+  }
+}

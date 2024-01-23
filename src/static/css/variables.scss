@@ -1,0 +1,74 @@
+
+// variables
+$background-color: #f8f8f8;
+$theme-green: #4AD975;
+$select-active-color: #4AD975;
+$default-font-size: 14px;
+
+// ============== font 文字相关 ===========================================
+// 一些特殊情况需要加粗的标题，如课文标题啊之类的
+$stress-font-size-big: 18px;
+
+// 重要文字大小，如用在一些重要的文字内容标题以及正文，功能性按钮
+$stress-font-size: 16px;
+
+// 主要文字大小，文章正文，小标题等
+$primary-font-size: 14px;
+
+// 次要文字大小，辅助性文字，备注，提示性说明，小按钮等
+$minor-font-size: 12px;
+
+$tip-font-size: 10px;
+
+//  ============== color  颜色相关 ============================================
+// --按UI规范里，参考AndroidAPP里公共颜色整理
+
+// 用于重要级文字信息、内页标题信息：如正文内容文字
+$stress-text-color: #222222;
+
+$primary-text-color: #666666;
+
+// APP辅助色，如标签，icon等
+$normal-primary-btn-color: #ffb142;
+
+// 用于辅助、次要的文字信息、导航灰色普通按钮描边：如发送信息作业说明
+$normal-minor-text-color: #999999;
+
+// 重要 小面积使用,用于标题栏和突出的文字、按钮和icon：如导航底色,可点击的文字
+$stress-clickable-color: #4AD975;
+
+// 一些蓝色主题页面的蓝色可点击色
+$clickable-blue-color: #2782ff;
+
+// 反差背景色上的文字，如绿色按钮上白字
+$contrast-text-color: #ffffff;
+
+// 用于界面内小图标灰色按钮、如返回按钮等
+$normal-minor-btn-color: #c8c7cc;
+
+// 用于分割线,标签描边，列表按下去的效果
+$normal-divider-line-color: #d7d7d7;
+
+// 用于不带内容的分割区域底色
+$weaken-divider-block-color: #f3f3f3;
+
+// 用于带内容的分割区域底色
+$weaken-divider-block-with-text-color: #eef0f2;
+
+// tab栏灰色背景
+$tab-gray-color: #999999;
+
+// tab选中底部指示条颜色
+$tab-selected-color: #4AD975;
+
+// tab未选中底部指示条颜色
+$tab-not-selected-color: #999999;
+
+// 透明颜色
+$transparent-color: #00000000;
+
+// 警告红颜色
+$red-color: #ff5273;
+
+// 警告红颜色
+$title_black: #000000;

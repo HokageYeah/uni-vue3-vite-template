@@ -1,0 +1,8 @@
+/dist/*
+/public/*
+public/*
+/src/components/common/*
+/src/components/thorui/*
+/src/static/*
+/src/style/*
+/src/uni.scss

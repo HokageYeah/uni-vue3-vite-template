@@ -1,0 +1,61 @@
+/deep/ .aplayer {
+  //去除播放器后面的播放模式
+  .aplayer-icon-mode {
+    display: none !important;
+   }
+
+  .aplayer-pic {
+    border-radius: 50%;
+    margin: 10px;
+    height: 40px;
+    width: 40px;
+    background-color: #4AD975 !important;
+    background-image: none !important;
+    .aplayer-play {
+      background:  url($cdn + '/nb/m/reading/img/en-play.png');
+      height: 42px;
+      width: 42px;
+      background-size: cover;
+      border: none ;
+      bottom: 0px !important;
+      right: 0px !important;
+      margin: 0px !important;
+    }
+    .aplayer-pause {
+      background:  url($cdn + '/nb/m/reading/img/en-pause.png');
+      height: 40px;
+      width: 40px;
+      background-size: cover;
+      border: none ;
+      bottom: 0px !important;
+      right: 0px !important;
+      margin: 0px !important;
+    }
+    .aplayer-icon {
+      display: none;
+    }
+    .aplayer-button {
+      text-shadow:none !important;
+      -webkit-box-shadow:none !important;
+      box-shadow:none !important;
+    }
+  }
+
+  .aplayer-info {
+    padding: 6px 22px 8px 0px !important;
+  }
+
+  .aplayer-bar {
+    margin-left: 2px;
+    .aplayer-played {
+      background: #4AD975 !important;
+      .aplayer-thumb {
+        border-color: #4AD975 !important;
+      }
+    }
+  }
+
+  .aplayer-controller {
+    display: block !important;
+  }
+}
